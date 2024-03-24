@@ -22,8 +22,8 @@ body{
 section{
     height: 100vh;
 }
-#id-home {
-    height: 150vh;
+#id-education {
+    width: 100px;
 }
 footer{
     height: 10vh;

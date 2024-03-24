@@ -19,11 +19,11 @@ window.onscroll = () => {
     //     console.log('About');
     // }
     // links.classList.remove('active');
-    navLinks[0].classList.toggle('active', window.scrollY <= 602);
-    // navLinks[1].classList.toggle('active', window.scrollY > 602 && window.scrollY <= 1206 );
-    // navLinks[2].classList.toggle('active', window.scrollY > 1206 && window.scrollY <= 1809);
-    // navLinks[3].classList.toggle('active', window.scrollY > 1809 && window.scrollY <= 2411);
-    // navLinks[4].classList.toggle('active', window.scrollY = 2412);
+    navLinks[0].classList.toggle('active', window.scrollY <= 953);
+    navLinks[1].classList.toggle('active', window.scrollY > 954 && window.scrollY <= 1908 );
+    navLinks[2].classList.toggle('active', window.scrollY > 1908 && window.scrollY <= 2859);
+    navLinks[3].classList.toggle('active', window.scrollY > 2859 && window.scrollY <= 3812);
+    navLinks[4].classList.toggle('active', window.scrollY > 3812 && window.scrollY <= 4765);
     // console.log(window.scrollY);
     // alert(sessionStorage.getItem("opMenu"));
 }
@@ -67,9 +67,10 @@ if (window.sessionStorage) {
 //   else{
 //     throw new Error('Tu Browser no soporta sessionStorage!');
 //   }
-
+let principal = document.querySelector('body');
+alert(principal.offsetHeight);
 let seccion = document.querySelectorAll('section');
-alert(seccion[0].offsetHeight);
+alert(seccion[4].offsetHeight);
 
 if (typeof(Storage) !== 'undefined') {
     // Código cuando Storage es compatible
