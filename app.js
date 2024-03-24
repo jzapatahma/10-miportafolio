@@ -69,7 +69,7 @@ if (window.sessionStorage) {
 //   }
 
 let seccion = document.querySelectorAll('section');
-// alert(seccion);
+alert(seccion[0].offsetHeight);
 
 if (typeof(Storage) !== 'undefined') {
     // Código cuando Storage es compatible
